@@ -13,6 +13,7 @@ var pluckFirstLineFromFile = function (filePath, callback) {
     if (err) {
       callback(err);
     } else {
+      console.log(data);
       let body = '';
       body += data;
       let lines = body.split('\n');
